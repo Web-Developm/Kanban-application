@@ -1,0 +1,98 @@
+<div cdkDropListGroup class="container">
+
+    <div class="row">
+        <div class="col-sm-4 sample">
+            <div class="example-container">
+                <h2>Available Items</h2>
+        
+                <div cdkDropList [cdkDropListData]="items" class="example-list" cdkDropListSortingDisabled (cdkDropListDropped)="drop($event)">
+                    <div class="task example-box" *ngFor="let items1 of items" cdkDrop>{{items1}}</div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 sample">
+            <div class="example-container">
+                <h2>Shopping basket</h2>
+        
+                <div cdkDropList [cdkDropListData]="fruits" class="example-list" cdkDropListSortingDisabled (cdkDropListDropped)="drop($event)">
+                    <div class="task example-box" *ngFor="let fruits1 of fruits" cdkDrop>{{fruits1   }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 sample">
+            <div class="example-container">
+                <h2>Places</h2>
+        
+                <div cdkDropList [cdkDropListData]="places" class="example-list" cdkDropListSortingDisabled (cdkDropListDropped)="drop($event)">
+                    <div class="task exmaple-box" *ngFor="let places1 of places" cdkDrop>{{places1}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---<div class="container">
+
+    <div class="section">
+
+        <div class="row cdkDropListGroup">
+
+            <div class="col-4 sample example-list" cdkDropList [cdkDropListData]="items" (cdkDropListDropped)="drop($event)" >
+                <div class="title">
+                    Ideas
+                </div>
+
+                <div class="task cdkDropList example-box" *ngFor="let items1 of items">{{items1}}</div>   
+
+            </div>
+
+
+            <div class="col-4 sample example-list" cdkDropList [cdkDropListData]="fruits" (cdkDropListDropped)="drop($event)">
+
+                <div class="title">
+                    Ideas
+                </div>
+
+                <div class="task cdkDropList" *ngFor="let fruits1 of fruits">{{fruits1}}</div>
+
+                
+            </div>
+
+            <div class="col-4 sample" cdkDropList [cdkDropListData]="places" (cdkDropListDropped)="drop($event)">
+                <div class="title">
+                    Todo
+                </div>
+
+                <div class="task cdkDropList" *ngFor="let places1 of places">{{places1}}</div> 
+            </div>
+        </div>
+
+    </div>
+</div-->
